@@ -1,0 +1,146 @@
+.col {
+    flex: 1;
+}
+
+#zero{
+  width: 160px;
+  border-radius: 0 0 0 15px;
+}
+
+#clear{
+  border-radius: 15px 0 0 0;
+}
+
+#divide{
+  border-radius: 0 15px 0 0 ;
+}
+
+#equals{
+  border-radius: 0 0 15px 0;
+}
+#clear{
+  width: 240px;
+}
+
+button{
+  width: 80px;
+  height: 80px;
+  border: none;
+  outline: none;
+  background-color: rgba(242, 240, 240, 0.22);
+  font-size: 20px;
+  color: white;
+}
+
+
+html{
+  display: flex;
+  justify-content: center;
+}
+
+#display{
+  height: 80px;
+  padding-left: 4%;
+  padding-right: 4%;
+  color: white;
+  border-radius: 15px 15px 0 0;
+  font-size: 24px;
+  display: flex;
+  justify-content: right;
+  align-self: center;
+  justify-self: center;
+  align-items: center; 
+}
+
+#display-text{
+  overflow-x: scroll;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  text-align: right;
+
+}
+#app-container{
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  overflow: scroll;
+}
+
+#UI-container{
+  background-color: rgba(241, 241, 241, 0.28);
+  border-radius: 15px 15px 15px 15px;
+  margin-top: 50px;
+  max-width: 320px;  
+}
+
+/*toggle*/
+#toggle{
+  width: 100px;
+  height: 50px;
+  border-radius: 25px;
+  background-color: rgba(242, 240, 240, 0.22);
+  display: flex;
+  justify-content: right;
+  align-items: center;  
+  margin-top: 5vh;
+}
+
+#switch{
+  width: 45px; 
+  height: 45px;
+  border-radius: 40px; 
+  background-repeat: no-repeat;
+  background-position: center;
+
+  
+}
+
+/*dark mode*/
+#app-container.dark{
+  background-image: url('./assets/Group\ 1.png');
+}
+.dark #switch{
+  background-image: url("./assets/Vector\ 1.png");
+  background-size: 35%;
+  background-color: rgba(72, 151, 208, 0.66);
+  margin-right: 4px;
+}
+.dark button:hover{
+  background-color: rgba(72, 151, 208, 0.66);
+}
+.dark #toggle{
+  justify-content: right;  
+  margin-right: 2px;
+}
+
+/*light mode*/
+#app-container.light{
+  background-image: url("./assets/Group\ 2.png");
+}
+
+.light #switch {
+  background-image: url("./assets/Group\ 3.png");
+  background-size: 50%;
+  margin-left: 4px;
+  background-color: rgba(255, 99, 221, 0.37);
+}
+.light button{
+  color: black;
+}
+.light #display{
+  color: black;
+}
+
+.light button:hover {
+  background-color: rgba(255, 99, 221, 0.37);
+}
+
+.light #toggle{
+  justify-content: left;
+  margin-left: 2px;
+}
